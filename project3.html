@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Times Square</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap'); /* Modern, bold font for Times Square vibe */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: linear-gradient(to right, #2e003e, #000000); /* Dark purple to black gradient */
+            font-family: 'Montserrat', sans-serif; /* Modern font */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            position: relative;
+            overflow-x: hidden;
+            color: #ddd;
+        }
+
+        /* Abstract Design Elements */
+        .abstract-box {
+            position: absolute;
+            border-radius: 20px;
+            opacity: 0.7;
+        }
+
+        .box1 {
+            top: 10%;
+            left: -10%;
+            width: 300px;
+            height: 350px;
+            background-color: rgba(123, 31, 162, 0.6); /* Dark purple */
+            transform: rotate(12deg);
+        }
+
+        .box2 {
+            top: 60%;
+            right: -10%;
+            width: 400px;
+            height: 200px;
+            background-color: rgba(54, 33, 89, 0.6); /* Darker purple */
+            transform: rotate(-12deg);
+        }
+
+        .box3 {
+            top: 35%;
+            left: 10%;
+            width: 350px;
+            height: 300px;
+            background-color: rgba(74, 20, 140, 0.6); /* Vibrant purple */
+            transform: rotate(8deg);
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: rgba(39, 20, 62, 0.9); /* Dark purple */
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+            position: relative;
+            z-index: 1;
+            font-size: 2.7em;
+            font-weight: 700;
+            color: #f2ceff;
+        }
+
+        main {
+            padding: 20px;
+            flex: 1;
+            background-color: rgba(40, 0, 56, 0.9); /* Dark background */
+            border-radius: 20px;
+            margin: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+            position: relative;
+            z-index: 1;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        img {
+            max-width: 320px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+        }
+
+        .text-container {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(123, 0, 255, 0.8); /* Purple background for text */
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            font-size: 1.2em;
+            line-height: 1.8;
+            color: #ddd;
+        }
+
+        .text-container strong {
+            color: #000000; /* Light purple for emphasis */
+            font-weight: 700;
+            text-decoration: underline; /* Underline keywords */
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(20, 0, 51, 0.9); /* Dark footer */
+            color: #bb86fc;
+            margin-top: auto;
+            border-radius: 10px;
+            position: relative;
+            z-index: 1;
+        }
+
+        footer a {
+            color: #9086fc;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .dropdown {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #5a2d73;
+            color: white;
+            border-radius: 5px;
+            border: none;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .dropdown:hover {
+            background-color: #7b3ea4;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Abstract Box Elements -->
+    <div class="abstract-box box1"></div>
+    <div class="abstract-box box2"></div>
+    <div class="abstract-box box3"></div>
+
+    <header>
+        Times Square
+    </header>
+
+    <main>
+        <div class="image-container">
+            <img src="timessquareodl.jpg" alt="Times Square Before - Image 1">
+            <img src="timessquarepresent.jpg" alt="Times Square Now - Image 2">
+            <img src="timessquarefuture.png" alt="Times Square Future - Image 3">
+        </div>
+
+        <div class="text-container">
+            <p><strong>Times Square</strong> is a major commercial intersection, entertainment center, and tourist destination in Midtown Manhattan, New York City. <br>
+               Known for its <strong>bright lights</strong>, <strong>iconic billboards</strong>, and bustling energy, Times Square is often referred to as <strong>"The Crossroads of the World."</strong> <br>
+               It has evolved from a horse carriage thoroughfare to a global icon that attracts <strong>millions of visitors annually</strong>.
+            </p>
+
+            <p><br><br><strong>The Future of Times Square:</strong><br>
+               As technology and urban planning advance, Times Square is expected to become even more <strong>immersive</strong> and <strong>interactive</strong>. <br>
+               With developments in <strong>augmented reality</strong>, smart city technologies, and sustainable design, the future of Times Square could involve eco-friendly infrastructure, <br>
+               interactive digital experiences, and a greater emphasis on <strong>pedestrian-friendly spaces</strong>. <br>
+               It may continue to be a beacon of culture, commerce, and innovation in the heart of New York City, adapting to the needs of future generations.
+            </p>
+        </div>
+    </main>
+
+    <footer>
+        <a href="main.html" class="mainpage-btn">Main Page</a>
+
+        <!-- Dropdown to navigate to other project pages -->
+        <select class="dropdown" onchange="location = this.value;">
+            <option value="#">Select a Project</option>
+            <option value="project1.html">Dumbo</option>
+            <option value="project2.html">The Little Island</option>
+            <option value="project3.html">Times Square</option>
+            <option value="project4.html">The Vessel</option>
+            <option value="project5.html">Central Park</option>
+            <option value="project6.html">Empire State Building</option>
+        </select>
+    </footer>
+
+</body>
+</html>

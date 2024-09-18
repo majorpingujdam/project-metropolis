@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Vessel</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap'); /* Industrial font for The Vessel vibe */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: linear-gradient(to right, #4b4b4b, #1f1f1f); /* Rustic metal color gradient */
+            font-family: 'Oswald', sans-serif; /* Bold, industrial font */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            position: relative;
+            overflow-x: hidden;
+            color: #e0e0e0; /* Light text for contrast */
+        }
+
+        /* Abstract Design Elements */
+        .abstract-box {
+            position: absolute;
+            border-radius: 20px;
+            opacity: 0.7;
+        }
+
+        .box1 {
+            top: 10%;
+            left: -10%;
+            width: 300px;
+            height: 350px;
+            background-color: rgba(139, 69, 19, 0.6); /* Rustic metal color */
+            transform: rotate(12deg);
+        }
+
+        .box2 {
+            top: 60%;
+            right: -10%;
+            width: 400px;
+            height: 200px;
+            background-color: rgba(105, 55, 35, 0.6); /* Darker rustic metal */
+            transform: rotate(-12deg);
+        }
+
+        .box3 {
+            top: 35%;
+            left: 10%;
+            width: 350px;
+            height: 300px;
+            background-color: rgba(128, 64, 0, 0.6); /* Deep industrial brown */
+            transform: rotate(8deg);
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: rgba(77, 53, 42, 0.9); /* Dark brown header */
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+            position: relative;
+            z-index: 1;
+            font-size: 2.8em;
+            font-weight: 700;
+            color: #d59a1b; /* Gold for contrast */
+        }
+
+        main {
+            padding: 20px;
+            flex: 1;
+            background-color: rgba(60, 60, 60, 0.9); /* Industrial background */
+            border-radius: 20px;
+            margin: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+            position: relative;
+            z-index: 1;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        img {
+            max-width: 320px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7); /* Strong shadow for depth */
+        }
+
+        .text-container {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(139, 69, 19, 0.8); /* Dark metal tone for text area */
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+            font-size: 1.2em;
+            line-height: 1.8;
+            color: #e0e0e0;
+        }
+
+        .text-container strong {
+            color: #d59a1b; /* Gold for emphasis */
+            font-weight: 700;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(77, 53, 42, 0.9); /* Dark industrial footer */
+            color: #d59a1b;
+            margin-top: auto;
+            border-radius: 10px;
+            position: relative;
+            z-index: 1;
+        }
+
+        footer a {
+            color: #d59a1b;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .dropdown {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #6e4b34;
+            color: white;
+            border-radius: 5px;
+            border: none;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .dropdown:hover {
+            background-color: #8e6140;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Abstract Box Elements -->
+    <div class="abstract-box box1"></div>
+    <div class="abstract-box box2"></div>
+    <div class="abstract-box box3"></div>
+
+    <header>
+        The Vessel
+    </header>
+
+    <main>
+        <div class="image-container">
+            <img src="thevesselold.png" alt="The Vessel Before - Image 1">
+            <img src="thevesselnow.png" alt="The Vessel Now - Image 2">
+            <img src="thevesselfuture.png" alt="The Vessel Future - Image 3">
+        </div>
+
+        <div class="text-container">
+            <p><strong>The Vessel</strong> is a striking centerpiece of Hudson Yards in New York City. <br>
+               Designed by British designer Thomas Heatherwick, it consists of a series of interconnected staircases offering unique views of the city. <br>
+               Since its completion, The Vessel has become a popular attraction, symbolizing the fusion of modern architecture and urban exploration.
+            </p>
+
+            <p><br><br><strong>The Future of The Vessel:</strong><br>
+               The Vessel is expected to evolve as a hub for art, culture, and technology in the coming years. <br>
+               With potential integrations of digital experiences and artistic collaborations, it could become a key venue for interactive exhibits and events. <br>
+               However, I would like to imagine it in a war time, setting in an apocalyptic background, because the future is not always bright for the human race.
+            </p>
+        </div>
+    </main>
+
+    <footer>
+        <a href="main.html" class="mainpage-btn">Main Page</a>
+
+        <!-- Dropdown to navigate to other project pages -->
+        <select class="dropdown" onchange="location = this.value;">
+            <option value="#">Select a Project</option>
+            <option value="project1.html">Dumbo</option>
+            <option value="project2.html">The Little Island</option>
+            <option value="project3.html">Times Square</option>
+            <option value="project4.html">The Vessel</option>
+            <option value="project5.html">Central Park</option>
+            <option value="project6.html">Empire State Building</option>
+        </select>
+    </footer>

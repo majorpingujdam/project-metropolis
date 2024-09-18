@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empire State Building</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap'); /* Gothic, apocalyptic font */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: linear-gradient(to right, #000000, #8b0000); /* Black to dark red gradient for an apocalyptic feel */
+            font-family: 'UnifrakturMaguntia', cursive; /* Gothic, medieval font for intense vibe */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            position: relative;
+            overflow-x: hidden;
+            color: #eee; /* Light color to contrast with dark background */
+        }
+
+        /* Abstract Design Elements with Different Shapes */
+        .abstract-ellipse {
+            position: absolute;
+            border-radius: 50%;
+            opacity: 0.7;
+        }
+
+        .ellipse1 {
+            top: 10%;
+            left: -15%;
+            width: 400px;
+            height: 600px;
+            background-color: rgba(139, 0, 0, 0.6); /* Dark red ellipse */
+        }
+
+        .ellipse2 {
+            top: 60%;
+            right: -10%;
+            width: 500px;
+            height: 700px;
+            background-color: rgba(255, 0, 0, 0.6); /* Bright red ellipse */
+        }
+
+        .abstract-triangle {
+            position: absolute;
+            opacity: 0.8;
+            clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+        }
+
+        .triangle1 {
+            top: 30%;
+            left: 5%;
+            width: 500px;
+            height: 400px;
+            background-color: rgba(255, 69, 0, 0.7); /* Fiery orange triangle */
+            transform: rotate(15deg);
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: rgba(139, 0, 0, 0.8); /* Dark red background for header */
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+            position: relative;
+            z-index: 1;
+            font-size: 3em;
+            font-weight: 700;
+            color: #ff4500; /* Fiery orange for a burning effect */
+        }
+
+        main {
+            padding: 20px;
+            flex: 1;
+            background-color: rgba(30, 0, 0, 0.9); /* Dark background with a hint of red */
+            border-radius: 20px;
+            margin: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+            position: relative;
+            z-index: 1;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        img {
+            max-width: 400px; /* Larger images */
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7); /* Stronger shadow for more drama */
+        }
+
+        .text-container {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(50, 0, 0, 0.8); /* Dark red background with opacity */
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            font-size: 1.2em;
+            line-height: 1.8;
+            color: #eee;
+        }
+
+        .text-container strong {
+            color: #ff6347; /* Tomato red for emphasis */
+            font-weight: 700;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(139, 0, 0, 0.9);
+            color: #ff6347;
+            margin-top: auto;
+            border-radius: 10px;
+            position: relative;
+            z-index: 1;
+        }
+
+        footer a {
+            color: #ff6347;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .dropdown {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #660000;
+            color: white;
+            border-radius: 5px;
+            border: none;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .dropdown:hover {
+            background-color: #8b0000;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Abstract Ellipses and Triangles Elements -->
+    <div class="abstract-ellipse ellipse1"></div>
+    <div class="abstract-ellipse ellipse2"></div>
+    <div class="abstract-triangle triangle1"></div>
+
+    <header>
+        Empire State Building
+    </header>
+
+    <main>
+        <div class="image-container">
+            <img src="empiresold.jpg" alt="Empire State Building Before - Image 1">
+            <img src="empiresnow.jpg" alt="Empire State Building Now - Image 2">
+            <img src="empiresfuture.png" alt="Empire State Building Future - Image 3">
+        </div>
+
+        <div class="text-container">
+            <p><strong>The Empire State Building</strong> has stood as a towering symbol of ambition and achievement since its completion in 1931. <br>
+               Located in Midtown Manhattan, it was once the tallest building in the world, and has come to symbolize New York City itself. <br>
+               Millions of people visit every year to experience its grandeur and panoramic views of the city.
+            </p>
+
+            <p><br><br><strong>The Future of the Empire State Building:</strong><br>
+               As time progresses, the Empire State Building faces potential threats from rising sea levels, economic downturns, and even climate disasters. <br>
+               Though it has withstood the test of time, it may eventually succumb to the forces of nature or urban decay. <br>
+               In a post-apocalyptic future, this once towering monument of human achievement could stand as a haunting reminder of a bygone civilization, occupied by vampires <strong>crumbling under the weight of its symbolism</strong>.
+            </p>
+        </div>
+    </main>
+
+    <footer>
+        <a href="main.html" class="mainpage-btn">Main Page</a>
+
+        <!-- Dropdown to navigate to other project pages -->
+        <select class="dropdown" onchange="location = this.value;">
+            <option value="#">Select a Project</option>
+            <option value="project1.html">Dumbo</option>
+            <option value="project2.html">The Little Island</option>
+            <option value="project3.html">Times Square</option>
+            <option value="project4.html">The Vessel</option>
+            <option value="project5.html">Central Park</option>
+            <option value="project6.html">Empire State Building</option>
+        </select>
+    </footer>
+
+</body>
+</html>

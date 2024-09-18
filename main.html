@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page - Project Metropolis</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=UnifrakturMaguntia&display=swap'); /* Gothic and medieval fonts for artistic, grotesque vibes */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: linear-gradient(to right, #1f1c18, #8e0e00); /* Dark to red gradient for an intense vibe */
+            font-family: 'Cinzel', serif; /* Elegant and medieval font */
+            overflow-x: hidden;
+            color: #f5f5f5;
+        }
+
+        /* Abstract Div Boxes */
+        .abstract-box {
+            position: absolute;
+            border-radius: 20px;
+            opacity: 0.8;
+        }
+
+        .box1 {
+            top: 10%;
+            left: -5%;
+            width: 250px;
+            height: 300px;
+            background-color: rgba(255, 0, 0, 0.7); /* Blood red */
+            transform: rotate(10deg);
+        }
+
+        .box2 {
+            top: 60%;
+            right: -8%;
+            width: 400px;
+            height: 200px;
+            background-color: rgba(100, 0, 0, 0.7); /* Dark crimson */
+            transform: rotate(-15deg);
+        }
+
+        .box3 {
+            top: 40%;
+            left: 5%;
+            width: 300px;
+            height: 250px;
+            background-color: rgba(153, 27, 0, 0.7); /* Fiery orange-red */
+            transform: rotate(5deg);
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            grid-template-rows: auto;
+            gap: 20px;
+            padding: 20px;
+            max-width: 1400px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1; /* Keeps the content above abstract divs */
+        }
+
+        .header {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: rgba(100, 0, 0, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        #biglogo {
+            width: 150px;
+            display: block;
+            margin: 10px auto;
+            filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.5));
+        }
+
+        h1 {
+            font-family: 'UnifrakturMaguntia', cursive; /* Gothic, medieval title font */
+            font-size: 3em;
+            color: #ff4500;
+            letter-spacing: 1px;
+        }
+
+        .main-content {
+            grid-column: 2 / 3;
+        }
+
+        .Foundation, .Voice, .Growing {
+            background-color: rgba(30, 0, 0, 0.8); /* Dark and sinister tone */
+            padding: 20px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+            margin-bottom: 20px;
+        }
+
+        .Foundation h2, .Voice h3, .Growing h4 {
+            font-size: 26px;
+            margin-bottom: 10px;
+            color: #ff6347; /* Intense orange */
+            font-family: 'Cinzel', serif;
+        }
+
+        .Foundation p, .Voice p, .Growing p {
+            font-size: 18px;
+            line-height: 1.8;
+            color: #f5f5f5;
+            font-family: 'Cinzel', serif;
+        }
+
+        a {
+            text-align: center;
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+            text-decoration: none;
+            color: #ff4500; /* Fiery orange */
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: #ff6347; /* Lighter orange-red */
+        }
+
+        /* Sidebar Styles */
+        .sidebar-left, .sidebar-right {
+            background-color: rgba(0, 0, 0, 0.9);
+            color: #fff;
+            padding: 20px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .sidebar-left h3, .sidebar-right h3 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #ff4500;
+            font-family: 'Cinzel', serif;
+        }
+
+        .sidebar-left p, .sidebar-right p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #ddd;
+        }
+
+        /* Button Style */
+        .mainpage-btn {
+            display: block;
+            width: 200px;
+            margin: 20px auto;
+            padding: 10px;
+            text-align: center;
+            background-color: #660000;
+            color: #fff;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 5px;
+            font-family: 'Cinzel', serif;
+        }
+
+        .mainpage-btn:hover {
+            background-color: #800000;
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.9);
+            padding: 10px;
+            text-align: center;
+            color: white;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+
+        /* Highlighted Text */
+        .highlight {
+            color: #ff6347;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Abstract Box Elements -->
+    <div class="abstract-box box1"></div>
+    <div class="abstract-box box2"></div>
+    <div class="abstract-box box3"></div>
+
+    <header class="header">
+        <h1>Project Metropolis</h1>
+        <img id="biglogo" src="biglogo.png" alt="Project Logo">
+    </header>
+
+    <div class="grid-container">
+        <div class="sidebar-left">
+            <h3>About</h3>
+            <p><br><br><br>This is a collection of my recent projects focusing on different landmarks across NYC.<br><br><br>Explore and enjoy the <span class="highlight">historical</span> transformation and imagination of each place!</p>
+        </div>
+
+        <div class="main-content">
+            <div class="Foundation">
+                <h2>Explore the Projects</h2>
+                <p>Click on a project to learn more about its <span class="highlight">historical</span>, <span class="highlight">present</span>, and <span class="highlight">future</span> transformations:</p>
+                <a href="project1.html">Dumbo</a>
+                <a href="project2.html">The Little Island</a>
+                <a href="project3.html">Times Square</a>
+                <a href="project4.html">The Vessel</a>
+                <a href="project5.html">Central Park</a>
+                <a href="project6.html">Empire State Building</a>
+            </div>
+
+            <div class="Voice">
+                <h3>Highlights</h3>
+                <p>Each project provides a unique <span class="highlight">historical</span>, <span class="highlight">present</span>, and <span class="highlight">future</span> perspective on some of the most iconic locations in NYC.</p>
+            </div>
+
+            <div class="Growing">
+                <h4>Future Projects</h4>
+                <p>Stay tuned for upcoming explorations into new areas and environments.</p>
+            </div>
+        </div>
+
+        <div class="sidebar-right">
+            <h3>Contact</h3>
+            <p><br><br><br><br><br><br>If you want to learn more or collaborate on future projects, feel free to reach out!<br>Email: owenchisan@gmail.com</p>
+        </div>
+    </div>
+
+    <!-- Main Page Button -->
+    <a href="main.html" class="mainpage-btn">Main Page</a>
+
+    <footer>
+        <p>&copy; 2024 Project Metropolis</p>
+    </footer>
+</body>
+</html>

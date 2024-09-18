@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Little Island</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=UnifrakturMaguntia&display=swap'); /* Gothic and elegant font pairing */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: linear-gradient(to right, #1c1c3a, #4169e1); /* Dark royal blue gradient */
+            font-family: 'Playfair Display', serif; /* Elegant font for text */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            position: relative;
+            overflow-x: hidden;
+            color: #e0e0e0; /* Light text to contrast with dark background */
+        }
+
+        /* Abstract Design Elements */
+        .abstract-box {
+            position: absolute;
+            border-radius: 20px;
+            opacity: 0.7;
+        }
+
+        .box1 {
+            top: 5%;
+            left: -10%;
+            width: 300px;
+            height: 350px;
+            background-color: rgba(0, 51, 153, 0.7); /* Royal blue */
+            transform: rotate(15deg);
+        }
+
+        .box2 {
+            top: 55%;
+            right: -12%;
+            width: 400px;
+            height: 200px;
+            background-color: rgba(0, 102, 204, 0.7); /* Lighter blue */
+            transform: rotate(-12deg);
+        }
+
+        .box3 {
+            top: 35%;
+            left: 10%;
+            width: 350px;
+            height: 300px;
+            background-color: rgba(0, 0, 102, 0.8); /* Dark navy blue */
+            transform: rotate(5deg);
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: rgba(29, 41, 81, 0.8); /* Dark blue header */
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+            position: relative;
+            z-index: 1;
+        }
+
+        header h1 {
+            font-family: 'UnifrakturMaguntia', cursive; /* Gothic font for the title */
+            font-size: 3em;
+            color: #f0e68c; /* Khaki for contrast */
+            letter-spacing: 1px;
+        }
+
+        main {
+            padding: 20px;
+            flex: 1;
+            background-color: rgba(24, 24, 72, 0.9); /* Dark blue background */
+            border-radius: 20px;
+            margin: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            position: relative;
+            z-index: 1;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        img {
+            max-width: 320px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Stronger shadow for depth */
+        }
+
+        .text-container {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(51, 102, 153, 0.8); /* Blue background for text area */
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            font-size: 1.2em;
+            line-height: 1.8;
+            color: #e0e0e0;
+        }
+
+        .text-container strong {
+            color: #f0e68c; /* Khaki for emphasis */
+            font-weight: 700;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(0, 0, 51, 0.9); /* Very dark blue footer */
+            color: #f0e68c;
+            margin-top: auto;
+            border-radius: 10px;
+            position: relative;
+            z-index: 1;
+        }
+
+        footer a {
+            color: #f0e68c;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .dropdown {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #2f4f4f;
+            color: white;
+            border-radius: 5px;
+            border: none;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .dropdown:hover {
+            background-color: #36454f;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Abstract Box Elements -->
+    <div class="abstract-box box1"></div>
+    <div class="abstract-box box2"></div>
+    <div class="abstract-box box3"></div>
+
+    <header>
+        <h1>The Little Island</h1>
+    </header>
+
+    <main>
+        <div class="image-container">
+            <img src="littleislandbefore.jpeg" alt="Little Island Before - Image 1">
+            <img src="littleislandnow.jpg" alt="Little Island Now - Image 2">
+            <img src="littleislandfuture.jpg" alt="Little Island Future - Image 3">
+        </div>
+
+        <div class="text-container">
+            <p><strong>Little Island</strong> at Pier 55 (stylized as Little Island @Pier55) is an artificial island park in the Hudson River, west of Manhattan in New York City. <br>
+               Designed by Heatherwick Studio, it is located near the intersection of West Street and West 13th Street in the Meatpacking District and Chelsea neighborhoods of Manhattan.<br>
+               Since its opening, Little Island has become a popular destination for city walkers, offering stunning views of the New Jersey skyline and the Hudson River.
+            </p>
+
+            <p><br><br><strong>The Future of Little Island:</strong><br>
+               As New York City continues to prioritize green spaces and urban sustainability, Little Island is expected to play a key role in the city's future. <br>
+               It could become a hub for outdoor events, performances, and community gatherings, while maintaining its artistic landscape design. <br>
+               The park may also adopt more sustainable practices, incorporating renewable energy sources and eco-friendly technologies to minimize its environmental impact.<br>
+               Little Island has the potential to evolve into a model for future urban parks, blending nature, technology, and public engagement.
+            </p>
+        </div>
+    </main>
+
+    <footer>
+        <a href="main.html" class="mainpage-btn">Main Page</a>
+
+              <select class="dropdown" onchange="location = this.value;">
+                <option value="#">Select a Project</option>
+                <option value="project1.html">Dumbo</option>
+                <option value="project2.html">The Little Island</option>
+                <option value="project3.html">Times Square</option>
+                <option value="project4.html">The Vessel</option>
+                <option value="project5.html">Central Park</option>
+                <option value="project6.html">Empire State Building</option>
+            </select>
+    </footer>
+
+</body>
+</html>

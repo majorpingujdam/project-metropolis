@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dumbo</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Anton&family=UnifrakturMaguntia&display=swap'); /* Bold and gothic fonts for an aggressive look */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: linear-gradient(to right, #2e003e, #6a0572); /* Dark purple gradient */
+            font-family: 'Anton', sans-serif; /* Aggressive, bold font */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            position: relative;
+            overflow-x: hidden;
+            color: #ddd;
+        }
+
+        /* Abstract Design Elements */
+        .abstract-box {
+            position: absolute;
+            border-radius: 20px;
+            opacity: 0.7;
+        }
+
+        .box1 {
+            top: 5%;
+            left: -10%;
+            width: 300px;
+            height: 350px;
+            background-color: rgba(102, 0, 204, 0.7); /* Deep purple */
+            transform: rotate(12deg);
+        }
+
+        .box2 {
+            top: 60%;
+            right: -10%;
+            width: 400px;
+            height: 200px;
+            background-color: rgba(72, 0, 72, 0.8); /* Darker purple */
+            transform: rotate(-12deg);
+        }
+
+        .box3 {
+            top: 35%;
+            left: 10%;
+            width: 350px;
+            height: 300px;
+            background-color: rgba(123, 0, 255, 0.7); /* Vibrant purple */
+            transform: rotate(8deg);
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: rgba(48, 0, 74, 0.9); /* Dark purple */
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+            position: relative;
+            z-index: 1;
+        }
+
+        header h1 {
+            font-family: 'UnifrakturMaguntia', cursive; /* Gothic and aggressive font for title */
+            font-size: 3em;
+            color: #ff00ff;
+            letter-spacing: 1px;
+        }
+
+        main {
+            padding: 20px;
+            flex: 1;
+            background-color: rgba(40, 0, 56, 0.9); /* Dark purple background */
+            border-radius: 20px;
+            margin: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            position: relative;
+            z-index: 1;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        img {
+            max-width: 320px; /* Slightly larger images */
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        .text-container {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(123, 0, 255, 0.8); /* Strong purple background */
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            font-size: 1.2em;
+            line-height: 1.8;
+            color: #ddd;
+        }
+
+        .text-container strong {
+            color: #ff00ff; /* Neon magenta for emphasis */
+            font-weight: 700;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(34, 0, 51, 0.9); /* Dark, aggressive purple for footer */
+            color: #ff00ff;
+            margin-top: auto;
+            border-radius: 10px;
+            position: relative;
+            z-index: 1;
+        }
+
+        footer a {
+            color: #ff00ff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .dropdown {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #660099;
+            color: white;
+            border-radius: 5px;
+            border: none;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .dropdown:hover {
+            background-color: #9900cc;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Abstract Box Elements -->
+    <div class="abstract-box box1"></div>
+    <div class="abstract-box box2"></div>
+    <div class="abstract-box box3"></div>
+
+    <header>
+        <h1>Dumbo</h1>
+    </header>
+
+    <main>
+        <div class="image-container">
+            <img src="olddumbo.jpg" alt="Dumbo Before - Image 1">
+            <img src="dumbonow.png" alt="Dumbo Now - Image 2">
+            <img src="dumbofuture.png" alt="Dumbo Future - Image 3">
+        </div>
+
+        <div class="text-container">
+            <p><strong>Dumbo</strong>, which stands for "Down Under the Manhattan Bridge Overpass," is a historic neighborhood in Brooklyn, New York City. <br>
+               Originally a ferry landing and industrial hub, Dumbo has transformed into a vibrant area known for its cobblestone streets, <br>
+               art galleries, and stunning views of the Manhattan skyline. <br>
+               Over the years, it has become one of the most expensive neighborhoods in Brooklyn due to its proximity to Manhattan and waterfront views.<br>
+               It's a mix of old warehouses converted into luxury lofts and tech startups in the heart of NYC.
+            </p>
+
+            <p><br><br><strong>The Future of Dumbo:</strong><br>
+               As technology continues to evolve, Dumbo is expected to become a hub for creative industries and startups, with an influx of younger professionals. <br>
+               With sustainability initiatives on the rise, Dumbo could see the development of green architecture, smart city infrastructure, and an increase in pedestrian-friendly areas. <br>
+               The historic charm of the cobblestone streets may be preserved, but complemented by cutting-edge tech spaces and eco-friendly urban designs.<br>
+               Dumbo might become one of the key tech centers of NYC, fusing art, technology, and urban life into a forward-thinking neighborhood.
+            </p>
+        </div>
+    </main>
+
+    <footer>
+        <a href="main.html" class="mainpage-btn">Main Page</a>
+
+        <!-- Dropdown to navigate to other project pages -->
+        <select class="dropdown" onchange="location = this.value;">
+            <option value="#">Select a Project</option>
+            <option value="project1.html">Dumbo</option>
+            <option value="project2.html">The Little Island</option>
+            <option value="project3.html">Times Square</option>
+            <option value="project4.html">The Vessel</option>
+            <option value="project5.html">Central Park</option>
+            <option value="project6.html">Empire State Building</option>
+        </select>
+    </footer>
+
+</body>
+</html>

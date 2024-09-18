@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Central Park</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap'); /* Elegant and natural font for Central Park vibe */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: linear-gradient(to right, #0a0a0a, #1b3b09); /* Dark gradient transitioning from black to dark green */
+            font-family: 'Lora', serif; /* Elegant and organic font style */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            position: relative;
+            overflow-x: hidden;
+            color: #ddd; /* Light color to contrast against dark background */
+        }
+
+        /* Abstract Design Elements with Different Shapes */
+        .abstract-circle {
+            position: absolute;
+            border-radius: 50%;
+            opacity: 0.5;
+        }
+
+        .circle1 {
+            top: 10%;
+            left: -15%;
+            width: 400px;
+            height: 400px;
+            background-color: rgba(46, 139, 87, 0.5); /* Dark green circle */
+        }
+
+        .circle2 {
+            top: 60%;
+            right: -10%;
+            width: 500px;
+            height: 500px;
+            background-color: rgba(0, 51, 0, 0.5); /* Very dark green circle */
+        }
+
+        .abstract-rectangle {
+            position: absolute;
+            border-radius: 20px;
+            opacity: 0.6;
+        }
+
+        .rectangle1 {
+            top: 40%;
+            left: 5%;
+            width: 500px;
+            height: 250px;
+            background-color: rgba(0, 102, 51, 0.6); /* Dark green rectangle */
+            transform: rotate(10deg);
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: rgba(0, 51, 0, 0.8); /* Dark green background for header */
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            position: relative;
+            z-index: 1;
+            font-size: 2.5em;
+            font-weight: 700;
+            color: #b4ed9a; /* Lighter green for a despairing contrast */
+        }
+
+        main {
+            padding: 20px;
+            flex: 1;
+            background-color: rgba(0, 20, 10, 0.9); /* Very dark background for the main content */
+            border-radius: 20px;
+            margin: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            position: relative;
+            z-index: 1;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        img {
+            max-width: 400px; /* Larger images */
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Stronger shadow for a more dramatic effect */
+        }
+
+        .text-container {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(0, 30, 0, 0.8); /* Dark background with some opacity */
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #ddd;
+        }
+
+        .text-container strong {
+            color: #a3d39c;
+            font-weight: 700;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(0, 51, 0, 0.9);
+            color: #b4ed9a;
+            margin-top: auto;
+            border-radius: 10px;
+            position: relative;
+            z-index: 1;
+        }
+
+        footer a {
+            color: #b4ed9a;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .dropdown {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #0c3d09;
+            color: white;
+            border-radius: 5px;
+            border: none;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .dropdown:hover {
+            background-color: #102a15;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Abstract Circle and Rectangle Elements -->
+    <div class="abstract-circle circle1"></div>
+    <div class="abstract-circle circle2"></div>
+    <div class="abstract-rectangle rectangle1"></div>
+
+    <header>
+        Central Park
+    </header>
+
+    <main>
+        <div class="image-container">
+            <img src="centralparkold.png" alt="Central Park Before - Image 1">
+            <img src="centralparknow.png" alt="Central Park Now - Image 2">
+            <img src="centralparkfuture.png" alt="Central Park Future - Image 3">
+        </div>
+
+        <div class="text-container">
+            <p><strong>Central Park</strong> is an iconic urban park in New York City, providing an oasis of nature amidst the bustling metropolis. <br>
+               Spanning 843 acres, it was designed by Frederick Law Olmsted and Calvert Vaux, and has become a landmark symbol of city parks worldwide. <br>
+               Central Park is a destination for recreation, relaxation, and culture, attracting millions of visitors every year.
+            </p>
+
+            <p><br><br><strong>The Future of Central Park:</strong><br>
+               Central Park is expected to continue its legacy as a haven for nature and urban life, with plans for <strong>sustainability</strong> and <strong>green space conservation</strong>. <br>
+               Future developments may include eco-friendly infrastructure, increased biodiversity efforts, and new interactive areas for education and community engagement. <br>
+               However, if humans continue to ignore the looming threats of <strong>global warming</strong> and <strong>pollution</strong>, this precious green space could become tarnished and severely impacted by environmental damage.
+            </p>
+        </div>
+    </main>
+
+    <footer>
+        <a href="main.html" class="mainpage-btn">Main Page</a>
+
+        <!-- Dropdown to navigate to other project pages -->
+        <select class="dropdown" onchange="location = this.value;">
+            <option value="#">Select a Project</option>
+            <option value="project1.html">Dumbo</option>
+            <option value="project2.html">The Little Island</option>
+            <option value="project3.html">Times Square</option>
+            <option value="project4.html">The Vessel</option>
+            <option value="project5.html">Central Park</option>
+            <option value="project6.html">Empire State Building</option>
+        </select>
+    </footer>
+
+</body>
+</html>
